@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: my_wsorders # this is the name of the source dbt will refer to
+    description: 'sample table with ws orders'
+    database: bi-team-189611  # GCP project
+    schema: orders  # source dataset
+    tables:
+      - name: wsorders2 # source table name
+        description: 'add a desctiption if required'
+#      - name: customers
+
+#  - name: stripe
+#    tables:
+#      - name: payments payments
